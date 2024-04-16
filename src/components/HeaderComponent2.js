@@ -2,16 +2,15 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import EmployeeService from "../services/EmployeeService";
-import {FaSearch} from "react-icons/fa";
-import logo from "../assets/logo.jpg";
+import {FaSearch} from "react-icons/fa"
+import logo from "../assets/logo.jpg"
 
-const HeaderComponent = () =>{
+const HeaderComponent2 = () =>{
     const [message, setMessage] = useState("")
 
     useEffect(()=>{
         getStatus();
         title();
-        logout();
     }, [])
     const getStatus = ()=>{
         
@@ -33,6 +32,7 @@ const HeaderComponent = () =>{
 
 
     }
+
     const logout = ()=>{
         
         EmployeeService.logout().then((response)=>{
@@ -46,7 +46,7 @@ const HeaderComponent = () =>{
     }
     const title = ()=>{
         if(message=="login success"){
-            return <Link to = "/" className="navbar-brand" onClick={logout}>Deconnexion</Link>   
+            return <Link to = "/" className="navbar-brand" onClick={logout}>Deconnexion</Link>  
         }else{
             return <div>
                         <Link to = "/register" className="navbar-brand">S'inscrire</Link>   
@@ -56,46 +56,36 @@ const HeaderComponent = () =>{
         }
     }
 
-        
-        
-
-    
-
 
 
     return(
-        
-
         <div className="App-header">
             <div className="logoApp">
             <img src={logo} alt="logo" className="logo"/>
             </div>
-        
         
                 <div>
                 <nav className="navbar navbar-expand-md navbar-dark bg-dark">
                     <div>
                         <Link to = "/home" className="navbar-brand">Accueil</Link>   
                     </div>
-                    <Link to = "/home" className="navbar-brand">Universités</Link> 
-
+                    <Link to = "/home" className="navbar-brand">Universités</Link>
                     <div>
+                         
                         {
                             title()
                         }
                     
                     </div>
                 
-                    
-
                 </nav>
                 </div>
             <div className="input-wapper">
                 <FaSearch id="search-icon"/>
                 <input placeholder="taper ici..." className="input-text"/>
             </div>
-        
+            
         </div>
     )
 }
-export default HeaderComponent
+export default HeaderComponent2

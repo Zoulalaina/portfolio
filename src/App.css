@@ -15,13 +15,15 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 13vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+  border: inset;
   font-size: calc(10px + 2vmin);
   color: white;
+
+  justify-content: space-between;
 }
 
 .App-link {
@@ -35,4 +37,51 @@
   to {
     transform: rotate(360deg);
   }
+}
+.liste{
+  display: flex;
+    flex-wrap: wrap;
+    /* align-content: revert-layer; */
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+.container{
+  margin-top: 10px;
+  margin-block-end: 80px;
+}
+.input-wapper{
+  background-color: black;
+  border-radius: 10px;
+  margin-right: 10px;
+  border: outset;
+
+}
+.input-text{
+  background-color: white;
+  border-radius: 10px;
+  width: 150px;
+}
+.logo{
+  width: 120px;
+  margin: 10px;
+  border: outset;
+}
+.footer{
+  background-color: #282c34;
+    color: white;
+   
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: inset;
+}
+.navbar{
+  border: outset;
+}
+.univ{
+  margin-bottom: 30px;
 }
