@@ -40,7 +40,7 @@ const AddUniversityForm = () => {
       .then((data) => {
         console.log(data); // Afficher la réponse du serveur dans la console
         // Faire d'autres traitements ou redirection après l'ajout réussi
-        navigate("/home");
+        navigate("/admin");
 
       })
       .catch((error) => {
@@ -57,7 +57,7 @@ const AddUniversityForm = () => {
       .then((data) => {
         console.log(data); // Afficher la réponse du serveur dans la console
         // Faire d'autres traitements ou redirection après l'ajout réussi
-        navigate("/home");
+        navigate("/admin");
 
       })
       .catch((error) => {
