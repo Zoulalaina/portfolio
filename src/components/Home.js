@@ -1,47 +1,36 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
-import UnivService from "../services/UnivService";
+import logo from '../assets/IMG_6101.JPG';
 const Home=()=>{
-    const[universites, setUniversites]=useState([])
-    useEffect(()=>{
-        getAllUniversite();
-    }, [])
-    const getAllUniversite=()=>{
-        UnivService.getAllUniv().then((response)=>{
-            setUniversites(response.data)
-            console.log(response.data);
-
-        }).catch(error =>{
-            console.log(error);
-        })
-
-    }
-
     return(
-        <div>
-            <div className="container">
-                <h1 className="text-center">Les Universités Publiques Malagasy</h1>
-                <div className="liste">
-                    
-                        {universites.map(universite=>(
-                            
-                            <div className="univ">
-                           
-                            <Link to={"/univ/"+universite.idUniversite}>
-                            <img src={'data:image/png;base64,'+universite.image} style={{width:'350px', height:'200px'}} alt="univ"></img><br/>
-                            <a>{universite.nomUniversite}</a><br/>
-                            <a>{universite.siegeUniversite}</a>
-                            </Link>
-                            </div>
-                        )
-                            )}
-                    
+        <header>
+            <nav className="navbar navbar-expand-lg navbar-dark" style={{background:"black"}}>
+                <div className="container">
+                    <Link className="navbar-brand" to="/"><img src={logo} className="logo"></img></Link>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarNav">
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/"> Accueil</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/apropos"> A propos</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/cv"> Voir Cv</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/home"> Contact</Link>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-    );
+            </nav>
+        </header>
 
+
+    );
 }
 export default Home
