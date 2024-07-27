@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import sary from '../assets/sary2.JPG';
+import { FaLinkedin, FaGitAlt, FaFacebook, FaEnvelope, FaGithub } from "react-icons/fa";
 const Contenu=()=>{
     return(
         <section className="py-5" style={{background: '#f1f1f1'}}>
@@ -27,7 +28,9 @@ const Contenu=()=>{
                                 <li> Bases de données relationnelles (MySQL, PostgreSQL)</li>
                                 <li> Gestion de version avec Git</li>
                             </ul>
-                            <Link className="btn btn-primary" to= "/home">En savoir plus</Link>
+                            <FaLinkedin/> <FaGithub/> <FaFacebook/> <FaEnvelope/><br/><br/>
+
+                            <Link className="btn btn-primary" to= "/contact">Contactez-moi</Link> <Link className="btn btn-primary" to= "/cv">Voir CV</Link>
                         
                     </div>
                 </div>

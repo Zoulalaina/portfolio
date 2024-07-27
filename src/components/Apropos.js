@@ -9,7 +9,7 @@ const Apropos = () =>{
                 <h2 className="mb-4">A propos de moi</h2>
                 <div className="row">
                     <div className="col-md-6">
-                    <p>originaire de Madagascar, j'ai toujour été passionné par l'informatique et les nouvelles technologies. Après des études en Informatique, j'ai au l'opportunité de faire des stages, ce qui m'a permis d'approfondir mes connaissances et de développer mes compétence en tant que développeur back-end.</p>
+                    <p>Originaire de Madagascar, j'ai toujour été passionné par l'informatique et les nouvelles technologies. Après des études en Informatique, j'ai au l'opportunité de faire des stages, ce qui m'a permis d'approfondir mes connaissances et de développer mes compétence en tant que développeur back-end.</p>
                 </div>
                 <div className="col-md-6">
                     <p>En dehors de travail, j'aime voyage et découvrir de nouvelle culture. J'apprecie également la randonnée et la pratique du sport surtout faire du basket-ball. Je suis convaincu que l'équilibre entre vie professionnelle et vie personnelle est essentiel pour atteindre l'apanouissement.</p>

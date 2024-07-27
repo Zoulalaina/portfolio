@@ -19,10 +19,7 @@ const Home=()=>{
                                 <Link className="nav-link" to="/apropos"> A propos</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/cv"> Voir Cv</Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to="/home"> Contact</Link>
+                                <Link className="nav-link" to="/contact"> Contact</Link>
                             </li>
                         </ul>
                     </div>
