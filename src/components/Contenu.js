@@ -14,7 +14,7 @@ const Contenu=()=>{
                             <h1 className="md-4 animate__animated animate__fadeInRigth">
                                 Bonjour, je suis ANDRIANARISOA Zo Lalaina
                             </h1>
-                            <p className="lead md-4">Je suis un dévéloppeur back-end passionné, specialisé dans la création d'application web et API robustes et performantes.</p>
+                            <p className="lead md-4">Je suis un dévéloppeur et data scientist, specialisé dans la création d'application web, API robustes et performantes, analyse et science de données</p>
                             <div className="d-flex align-items-center mb-4">
                                 <i className="bi bi-code-square fs-3 me-3">
 
@@ -25,6 +25,7 @@ const Contenu=()=>{
                             <ul className="list-unistyled">
                                 <li>Java, Spring boot, Spring security, JPA</li>
                                 <li>JavaScript, Node.js, React.js</li>
+                                <li>Python, Numpy, Pandas, Matplotlib, Seaborn, Scikit_learn</li>
                                 <li> Bases de données relationnelles (MySQL, PostgreSQL)</li>
                                 <li> Gestion de version avec Git</li>
                             </ul>
